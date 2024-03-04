@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider_state_management/screens/stateful_widget_screen.dart';
 
-import 'screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,11 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
         useMaterial3: true,
       ),
-      home:  MyHomePage(),
+      home:  const StateFulWidgetScreen(),
     );
   }
 }
