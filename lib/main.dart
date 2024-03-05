@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_state_management/screens/stateful_widget_screen.dart';
+import 'package:provider_state_management/screens/why_provider_screen.dart';
 
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
         useMaterial3: true,
       ),
-      home:  const StateFulWidgetScreen(),
+      home:  const WhyProviderScreen(),
     );
   }
 }
