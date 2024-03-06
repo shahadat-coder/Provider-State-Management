@@ -35,7 +35,7 @@ class _CountExampleState extends State<CountExample> {
         child: Consumer<CounterProvider>(builder: (context,value,child){
           print('only this widget builds');
           return Text(value.count.toString(),
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 50,
             ),
           );
