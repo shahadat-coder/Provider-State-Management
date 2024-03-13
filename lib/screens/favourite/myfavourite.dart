@@ -16,22 +16,14 @@ class _MyFavouriteScreenState extends State<MyFavouriteScreen> {
     print('build');
     return Scaffold(
       appBar: AppBar(
-        title: Text('Favourite App'),
-        actions: [
-          InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> const MyFavouriteScreen()));
-              },
-              child: Icon(Icons.favorite)),
-          SizedBox(width: 20,)
-        ],
+        title: const Text('Favourite App'),
         centerTitle: true,
       ),
       body: Column(
         children: [
           Expanded(
             child: ListView.builder(
-                itemCount: 100,
+                itemCount: favouriteProvider.selectedItem.length,
                 itemBuilder: (context, index){
                   return Consumer<FavouriteItemProvider>(builder: (context, value, child){
                     return ListTile(

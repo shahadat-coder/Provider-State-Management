@@ -22,7 +22,7 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
         actions: [
           InkWell(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> const MyFavouriteScreen()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> MyFavouriteScreen()));
             },
               child: Icon(Icons.favorite)),
           SizedBox(width: 20,)
@@ -33,7 +33,7 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
         children: [
          Expanded(
            child: ListView.builder(
-             itemCount: favouriteProvider.selectedItem.length,
+             itemCount: 100,
                itemBuilder: (context, index){
                  return Consumer<FavouriteItemProvider>(builder: (context, value, child){
                    return ListTile(
