@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/provider/count_provider.dart';
 import 'package:provider_state_management/provider/example_one_provider.dart';
-import 'package:provider_state_management/screens/example_one.dart';
+import 'package:provider_state_management/provider/favourite_provider.dart';
+import 'screens/favourite/favourite_screen.dart';
 
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_)=> CounterProvider()),
         ChangeNotifierProvider(create: (_)=> ExampleOneProvider()),
+        ChangeNotifierProvider(create: (_)=> FavouriteItemProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
           useMaterial3: true,
         ),
-        home:  const ExampleOneScreen(),
+        home:  const FavouriteScreen(),
       ),
     );
 
