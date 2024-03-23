@@ -24,8 +24,8 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=> MyFavouriteScreen()));
             },
-              child: Icon(Icons.favorite)),
-          SizedBox(width: 20,)
+              child: const Icon(Icons.favorite)),
+          const SizedBox(width: 20,)
         ],
         centerTitle: true,
       ),
