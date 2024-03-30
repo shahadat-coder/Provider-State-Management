@@ -4,7 +4,7 @@ import 'package:provider_state_management/provider/count_provider.dart';
 import 'package:provider_state_management/provider/example_one_provider.dart';
 import 'package:provider_state_management/provider/favourite_provider.dart';
 import 'package:provider_state_management/provider/theme_changer_provider.dart';
-import 'package:provider_state_management/screens/dark_theme.dart';
+import 'package:provider_state_management/screens/value_notify_listner.dart';
 
 
 
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
               primarySwatch: Colors.red
           ),
-          home:  const DarkThemeScreen(),
+          home:   NotifyListenerScreen(),
         );
       }),
     );
