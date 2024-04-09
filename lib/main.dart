@@ -5,8 +5,6 @@ import 'package:provider_state_management/provider/count_provider.dart';
 import 'package:provider_state_management/provider/example_one_provider.dart';
 import 'package:provider_state_management/provider/favourite_provider.dart';
 import 'package:provider_state_management/provider/theme_changer_provider.dart';
-
-
 import 'screens/login.dart';
 
 
@@ -17,8 +15,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
